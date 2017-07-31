@@ -1,0 +1,54 @@
+{
+  "tags" : [ {
+    "description" : "Rest service swagger documentation",
+    "name" : "RestServiceVirtualController"
+  } ],
+  "basePath" : "/dev_api_dublin",
+  "paths" : {
+    "/services/portal/{leadId}" : {
+      "x-WM-BASE_PATH" : "/services/portal/{leadId}",
+      "x-WM-TAG" : "RestServiceVirtualController",
+      "put" : {
+        "tags" : [ "RestServiceVirtualController" ],
+        "x-WM-METHOD_NAME" : "invoke",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "leadId",
+          "type" : "string",
+          "required" : true,
+          "in" : "path"
+        } ],
+        "consumes" : [ "application/json" ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "$ref" : "#/definitions/RootResponse"
+            },
+            "description" : "Success"
+          }
+        },
+        "operationId" : "PUT_LeadasCold_RestServiceVirtualController-invoke"
+      },
+      "x-WM-RELATIVE_PATH" : "",
+      "x-WM-COMPLETE_PATH" : "${rest.PUT_LeadasCold.scheme}://${rest.PUT_LeadasCold.host}${rest.PUT_LeadasCold.basepath}/services/portal/{leadId}"
+    }
+  },
+  "host" : "wavemaker-apps.pramati.com",
+  "schemes" : [ "http" ],
+  "swagger" : "2.0",
+  "definitions" : {
+    "RootResponse" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "PUT_LeadasCold.RootResponse",
+      "x-WM-TAGS" : [ "RestServiceVirtualController" ]
+    }
+  },
+  "info" : {
+    "x-WM-SERVICE_TYPE" : "RestService",
+    "x-WM-API_ID" : "f1b274a8-abaf-4ddf-ae59-5a5bfcf52fd4",
+    "x-WM-USE_PROXY_FOR_WEB" : true,
+    "x-WM-SERVICE_ID" : "pramati",
+    "x-WM-USE_PROXY_FOR_MOBILE" : true,
+    "version" : "2.0"
+  }
+}

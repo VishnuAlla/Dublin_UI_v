@@ -1,0 +1,26 @@
+{
+  "authType" : "NONE",
+  "contentType" : "application/json",
+  "endpointAddress" : "http://wavemaker-apps.pramati.com/dev_api_dublin/services/portal/L00000002",
+  "method" : "PUT",
+  "requestBody" : "",
+  "headers" : { },
+  "queryParams" : { },
+  "sampleHttpResponseDetails" : {
+    "responseBody" : "\"0\"",
+    "convertedResponse" : null,
+    "statusCode" : 200,
+    "headers" : {
+      "Transfer-Encoding" : [ "chunked" ],
+      "Vary" : [ "Accept-Encoding" ],
+      "Date" : [ "Wed, 22 Mar 2017 06:55:19 GMT" ],
+      "X-XSS-Protection" : [ "1" ],
+      "Content-Type" : [ "application/json;charset=UTF-8" ],
+      "Connection" : [ "keep-alive" ],
+      "Server" : [ "Apache-Coyote/1.1" ],
+      "mode" : [ "block" ]
+    }
+  },
+  "redirectEnabled" : true,
+  "proxy" : null
+}

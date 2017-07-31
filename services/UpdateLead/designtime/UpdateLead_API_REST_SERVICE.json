@@ -1,0 +1,72 @@
+{
+  "tags" : [ {
+    "description" : "Rest service swagger documentation",
+    "name" : "RestServiceVirtualController"
+  } ],
+  "basePath" : "",
+  "paths" : {
+    "/UpdateLead/invoke/services/portal/{LeadId}" : {
+      "x-WM-TAG" : "RestServiceVirtualController",
+      "x-WM-BASE_PATH" : "/UpdateLead/invoke/services/portal/{LeadId}",
+      "get" : {
+        "tags" : [ "RestServiceVirtualController" ],
+        "x-WM-METHOD_NAME" : "invoke",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "LeadId",
+          "type" : "string",
+          "required" : true,
+          "in" : "path"
+        } ],
+        "consumes" : [ "text/xml" ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "x-WM-IS_LIST" : true,
+              "items" : {
+                "$ref" : "#/definitions/java.lang.Object"
+              },
+              "type" : "array"
+            },
+            "description" : "Success"
+          }
+        },
+        "operationId" : "UpdateLead_RestServiceVirtualController-invoke"
+      },
+      "x-WM-COMPLETE_PATH" : "${rest.UpdateLead.scheme}://${rest.UpdateLead.host}${rest.UpdateLead.basepath}/services/portal/{LeadId}",
+      "x-WM-RELATIVE_PATH" : ""
+    }
+  },
+  "host" : "wavemaker-apps.pramati.com",
+  "schemes" : [ "https" ],
+  "swagger" : "2.0",
+  "definitions" : {
+    "RootResponse" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "UpdateLead.RootResponse",
+      "x-WM-TAGS" : [ "RestServiceVirtualController" ],
+      "properties" : {
+        "RootResponseROOT" : {
+          "x-WM-IS_LIST" : true,
+          "items" : {
+            "$ref" : "#/definitions/java.lang.Object"
+          },
+          "type" : "array"
+        }
+      },
+      "required" : [ "RootResponseROOT" ]
+    },
+    "java.lang.Object" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "UpdateLead.java.lang.Object",
+      "x-WM-TAGS" : [ "RestServiceVirtualController" ]
+    }
+  },
+  "info" : {
+    "x-WM-SERVICE_TYPE" : "RestService",
+    "x-WM-API_ID" : "3c864ed5-dd6c-416c-b623-f169ae7ed6a0",
+    "x-WM-USE_PROXY_FOR_WEB" : true,
+    "x-WM-SERVICE_ID" : "pramati",
+    "x-WM-USE_PROXY_FOR_MOBILE" : true,
+    "version" : "2.0"
+  }
+}
